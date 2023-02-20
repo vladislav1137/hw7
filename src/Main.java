@@ -49,12 +49,20 @@ public class Main {
             total = total + totalInYear;
             System.out.println("Год " + i + ", численность населения составляет " + total);
         }
-
-
     }
 
     public static void task4 () {
         System.out.println("Задача 4");
+        int total = 0;
+        int contribution = 15000;
+        double procent = 0.07;
+        int month = 0;
+        while (total<12_000_000){
+            month++;
+            total = (int) (total*procent+total+contribution);
+            System.out.println("в "+ month + " месяце сумма = " + total);
+        }
+        System.out.println("Василию потребуется "+month+" месяцев");
     }
     public static void task5 () {
         System.out.println("Задача 5");
