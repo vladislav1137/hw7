@@ -57,15 +57,27 @@ public class Main {
         int contribution = 15000;
         double procent = 0.07;
         int month = 0;
-        while (total<12_000_000){
+        while (total<12_000_000) {
             month++;
-            total = (int) (total*procent+total+contribution);
-            System.out.println("в "+ month + " месяце сумма = " + total);
+            total = (int) (total * procent + total + contribution);
+                System.out.println("в " + month + " месяце сумма = " + total);
         }
         System.out.println("Василию потребуется "+month+" месяцев");
     }
     public static void task5 () {
         System.out.println("Задача 5");
+        int total = 0;
+        int contribution = 15000;
+        double procent = 0.07;
+        int month = 0;
+        while (total<12_000_000) {
+            month++;
+            total = (int) (total * procent + total + contribution);
+            if (month % 6 == 0) {
+                System.out.println("в " + month + " месяце сумма = " + total);
+            }
+        }
+        System.out.println("Василию потребуется "+month+" месяцев");
     }
 
     public static void task6 () {
