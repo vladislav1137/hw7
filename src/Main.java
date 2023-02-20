@@ -82,6 +82,21 @@ public class Main {
 
     public static void task6 () {
         System.out.println("Задача 6");
+        int total = 0;
+        int contribution = 15000;
+        double procent = 0.07;
+        int month = 0;
+        int monthPerYear = 12;
+        int numberOfYear = 9;
+        int numberOfMonth = monthPerYear*numberOfYear;
+        while (month<numberOfMonth) {
+            month++;
+            total = (int) (total * procent + total + contribution);
+            if (month % 6 == 0) {
+                System.out.println("в " + month + " месяце сумма = " + total);
+            }
+        }
+        System.out.println("За "+ numberOfYear + " лет Василий накопит "+ total);
     }
     public static void task7 () {
         System.out.println("Задача 7");
