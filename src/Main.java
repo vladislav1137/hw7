@@ -100,6 +100,13 @@ public class Main {
     }
     public static void task7 () {
         System.out.println("Задача 7");
+        int firstFriday = 3;
+        int daysInMonth = 31;
+        System.out.println("сегодня пятница " + firstFriday + " число. Необходимо подготовить отчет.");
+        while (firstFriday<daysInMonth){
+            firstFriday = firstFriday+7;
+            System.out.println("сегодня пятница " + firstFriday + " число. Необходимо подготовить отчет.");
+        }
     }
 
     public static void task8 () {
