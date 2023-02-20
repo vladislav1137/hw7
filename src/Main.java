@@ -111,5 +111,12 @@ public class Main {
 
     public static void task8 () {
         System.out.println("Задача 8");
+        int comet = 79;
+        while (comet<2100){
+            comet = comet +79;
+            if (comet>1850 && comet<2100){
+                System.out.println(comet);
+            }
+        }
     }
 }
