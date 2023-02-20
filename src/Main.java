@@ -38,6 +38,19 @@ public class Main {
     public static void task3 () {
         System.out.println();
         System.out.println("Задача 3");
+        int mortality = 8;
+        int birthRate = 17;
+        int differenceOfThousandInYear = birthRate - mortality;
+        int onYear = 1000;
+        int total = 12_000_000;
+        int numberX = total / onYear;
+        int totalInYear = differenceOfThousandInYear * numberX;
+        for (int i = 2023; i<2034; i++){
+            total = total + totalInYear;
+            System.out.println("Год " + i + ", численность населения составляет " + total);
+        }
+
+
     }
 
     public static void task4 () {
